@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Fill the Form</h1>
+  <label for="">Account Number : </label>
+  <input type="text" name="" id="" [(ngModel)]="acc.accNo" /> <br />
+  <label for="">Deposit amount : </label>
+  <input type="text" name="" id="" [(ngModel)]="acc.deposit" /><br />
+  <label for="">Date : </label>
+  <input type="text" name="" id="" [(ngModel)]="acc.date" />
+  <button class="btn btn-primary" (click)="addDetails()">Deposit</button>
+  <button class="btn btn-danger">Cancel</button>
+</div>
+<app-show-form [accounts]="accounts"></app-show-form>
