@@ -1,0 +1,48 @@
+{
+  "stocks": [
+    {
+      "id": "0",
+      "company": "New Company",
+      "initialPrice": "100",
+      "faceValue": "100"
+    },
+    {
+      "id": "1",
+      "company": "Actalent",
+      "initialPrice": 1000,
+      "faceValue": 10
+    },
+    {
+      "id": "2",
+      "company": "Allegis Groups",
+      "initialPrice": "100",
+      "faceValue": "200"
+    },
+    {
+      "id": "9",
+      "company": "iphone",
+      "initialPrice": "1000",
+      "faceValue": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "3a8a",
+      "phone": "8247373288",
+      "email": "nikethdonthula@gmail.com",
+      "pwd": "N@i#k$e%1234"
+    },
+    {
+      "id": "4dcf",
+      "email": "anil@gmail.com",
+      "pwd": "1234",
+      "phone": "1234567890"
+    },
+    {
+      "id": "a59a",
+      "email": "aajay@actalentservices.com",
+      "pwd": "1234",
+      "phone": "1234567890"
+    }
+  ]
+}
