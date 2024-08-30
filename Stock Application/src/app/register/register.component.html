@@ -1,0 +1,39 @@
+<div class="main-register-container">
+  <div class="register-container">
+    <h2>Register</h2>
+    <div class="input-group">
+      <label for="username">User Email</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your email"
+        [(ngModel)]="user.email"
+        required
+      />
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        [(ngModel)]="user.pwd"
+        required
+      />
+    </div>
+    <div class="input-group">
+      <label for="mobile">Mobile Number</label>
+      <input
+        type="tel"
+        id="mobile"
+        placeholder="Enter your mobile number"
+        [(ngModel)]="user.phone"
+        required
+      />
+    </div>
+    <button class="register-button" (click)="registerHandler()">
+      Register
+    </button>
+    <div class="footer">© 2024 Stock-App</div>
+  </div>
+</div>

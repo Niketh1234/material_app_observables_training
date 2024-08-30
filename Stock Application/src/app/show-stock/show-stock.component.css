@@ -1,0 +1,50 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    align-items: start;
+
+}
+.card p {
+    margin: 10px 0;
+    color: #555;
+}
+.card .label {
+    font-weight: bold;
+    color: #6a1fb4;
+    margin-left: 5px;
+}
+
+.button-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+button{
+    background-color: #6a1fb4;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 35px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #6a1fb4;
+}

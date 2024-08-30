@@ -1,0 +1,14 @@
+<div class="card-container">
+  <div class="card">
+    <span class="label">Company:</span
+    ><input type="text" [(ngModel)]="s.company" />
+    <span class="label">Initial Price:</span
+    ><input type="text" [(ngModel)]="s.initialPrice" />
+    <span class="label">Face Value:</span
+    ><input type="text" [(ngModel)]="s.faceValue" />
+    <div class="button-container">
+      <button (click)="saveHandler()">Save</button>
+      <button (click)="cancelHandler()">Cancel</button>
+    </div>
+  </div>
+</div>

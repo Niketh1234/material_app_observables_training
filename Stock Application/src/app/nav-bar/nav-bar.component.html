@@ -1,0 +1,24 @@
+<mat-toolbar class="mat-toolbar-style">
+  <h1 class="app-name" routerLink="">Stock Application</h1>
+  @if(ls.getItem('status') != null && ls.getItem('status') =='loggedin'){
+  <button mat-fab extended routerLink="/add-stock">
+    <mat-icon>add</mat-icon>
+    Add Stock
+  </button>
+  }
+  <button mat-fab extended routerLink="/show-stock">Show Stocks</button>
+  <span class="example-spacer"></span>
+  @if(ls.getItem('status') != null && ls.getItem('status') =='loggedin') {
+  <button mat-fab extended (click)="logoutHandler()">
+    <mat-icon>logout</mat-icon>
+    Logout
+  </button>
+  } @else{
+  <mat-icon class="icon-display book-icon-display">plus</mat-icon>
+  <button mat-fab extended routerLink="/register-user">Register</button>
+  <button mat-fab extended routerLink="/login-user">
+    <mat-icon>login</mat-icon>
+    Login
+  </button>
+  }
+</mat-toolbar>

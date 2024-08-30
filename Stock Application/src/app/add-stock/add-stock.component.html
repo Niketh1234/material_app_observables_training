@@ -1,0 +1,41 @@
+<div class="main-form-container">
+  <div class="form-container">
+    <h3>Enter the Stock Details</h3>
+    <form>
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input type="text" id="id" name="id" [(ngModel)]="stock.id" />
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          [(ngModel)]="stock.company"
+        />
+      </div>
+      <div class="form-group">
+        <label for="initial-price">Initial Price</label>
+        <input
+          type="number"
+          id="initial-price"
+          name="initial-price"
+          [(ngModel)]="stock.initialPrice"
+        />
+      </div>
+      <div class="form-group">
+        <label for="face-value">Face Value</label>
+        <input
+          type="number"
+          id="face-value"
+          name="face-value"
+          [(ngModel)]="stock.faceValue"
+        />
+      </div>
+      <div class="form-group">
+        <button (click)="addToStockArray()">Add</button>
+      </div>
+    </form>
+  </div>
+</div>

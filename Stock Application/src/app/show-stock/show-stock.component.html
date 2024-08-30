@@ -1,0 +1,18 @@
+<div>
+  <h3 style="margin: 20px; margin-bottom: 0">Stock Details :</h3>
+  <div class="card-container">
+    @for(stock of stocks;track $index){
+    <div class="card">
+      <p><span class="label">ID:</span> {{ stock.id }}</p>
+      <p><span class="label">Company:</span>{{ stock.company }}</p>
+      <p><span class="label">Initial Price:</span>{{ stock.initialPrice }}</p>
+      <p><span class="label">Face Value:</span>{{ stock.faceValue }}</p>
+      <div class="button-container">
+        <button (click)="handleEdit(stock.id)">Edit</button>
+        <button class="">Delete</button>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+<router-outlet></router-outlet>
